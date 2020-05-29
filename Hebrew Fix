@@ -1,0 +1,39 @@
+function decoder(input) {
+  
+var res = input;
+var i;
+for (i = 0; i<20; i++) {
+ 
+
+res = res.replace("%5D0", "א");
+res = res.replace("%5D1", "ב");
+res = res.replace("%5D2", "ג");  
+res = res.replace("%5D3", "ד");  
+res = res.replace("%5D4", "ה");
+res = res.replace("%5D5", "ו");
+res = res.replace("%5D6", "ז");
+res = res.replace("%5D7", "ח");  
+res = res.replace("%5D8", "ט");  
+res = res.replace("%5D9", "י");
+res = res.replace("%5DA", "ך");
+res = res.replace("%5DB", "כ");
+res = res.replace("%5DC", "ל");  
+res = res.replace("%5DD", "ם");  
+res = res.replace("%5DE", "מ");
+res = res.replace("%5DF", "ן");
+res = res.replace("%5E0", "נ");
+res = res.replace("%5E1", "ס");  
+res = res.replace("%5E2", "ע");  
+res = res.replace("%5E3", "ף");
+res = res.replace("%5E4", "פ");
+res = res.replace("%5E5", "ץ");
+res = res.replace("%5E6", "צ");  
+res = res.replace("%5E7", "ק");  
+res = res.replace("%5E8", "ר");
+res = res.replace("%5E9", "ש");
+res = res.replace("%5EA", "ת");
+
+}
+
+return decodeURI(res);
+}
